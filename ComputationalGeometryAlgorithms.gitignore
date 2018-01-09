@@ -1,0 +1,6 @@
+# Debug and Release folders
+\Debug
+\Release
+
+# Visual Studio .filters files
+*.filters
