@@ -1,6 +1,9 @@
 # Debug and Release folders
-\Debug
-\Release
+Debug/
+Release/
 
-# Visual Studio .filters files
-*.filters
+# VC++ Project file
+*.vcxproj
+
+# VC++ .filters files
+*.vcxproj.filters
