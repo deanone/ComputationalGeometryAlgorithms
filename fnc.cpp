@@ -1,5 +1,10 @@
 #include "fnc.h"
-
+/*!
+ * Computes the distance between two Points.
+ * @param p1 the first point
+ * @param p2 the second point
+ * @return the distance between the two Points
+ */
 double fnc::dist(Point& p1, Point& p2)
 {
 	Point diffPoint = p1 - p2;

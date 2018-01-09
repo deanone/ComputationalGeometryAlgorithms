@@ -44,6 +44,10 @@ size_t Point::getNumOfCoords() const
 	return coords.size();
 }
 
+/*!
+ * Returns the length of the vector representation of the Point.
+ * @return the length of the vector representation of the Point. 
+ */
 double Point::getLength()
 {
 	size_t numOfCoords = this->getNumOfCoords();
