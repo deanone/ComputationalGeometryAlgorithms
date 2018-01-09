@@ -75,17 +75,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af5c9d9090312eea567b6aa00a08bbf6a"><td class="memItemLeft" align="right" valign="top"><a id="af5c9d9090312eea567b6aa00a08bbf6a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Point</b> (const size_t &amp;numOfCoords)</td></tr>
 <tr class="separator:af5c9d9090312eea567b6aa00a08bbf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0367b61d5e647f2cfa5f1c4897be31ec"><td class="memItemLeft" align="right" valign="top"><a id="a0367b61d5e647f2cfa5f1c4897be31ec"></a>
-<a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_point.html">Point</a> &amp;rhs)</td></tr>
+<tr class="memitem:a0367b61d5e647f2cfa5f1c4897be31ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a0367b61d5e647f2cfa5f1c4897be31ec">operator=</a> (const <a class="el" href="class_point.html">Point</a> &amp;rhs)</td></tr>
 <tr class="separator:a0367b61d5e647f2cfa5f1c4897be31ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1be86f67ce055c515a9a651fb70b492"><td class="memItemLeft" align="right" valign="top"><a id="ac1be86f67ce055c515a9a651fb70b492"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCoord</b> (const size_t &amp;coordID, const double &amp;coordVal)</td></tr>
 <tr class="separator:ac1be86f67ce055c515a9a651fb70b492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04bc6b47b632bf4c7ebe3d02ea92014"><td class="memItemLeft" align="right" valign="top"><a id="ab04bc6b47b632bf4c7ebe3d02ea92014"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getCoord</b> (const size_t &amp;coordID) const</td></tr>
+<tr class="memitem:ab04bc6b47b632bf4c7ebe3d02ea92014"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#ab04bc6b47b632bf4c7ebe3d02ea92014">getCoord</a> (const size_t &amp;coordID) const</td></tr>
 <tr class="separator:ab04bc6b47b632bf4c7ebe3d02ea92014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4aae72c6dce93bc4514d08d3dededf"><td class="memItemLeft" align="right" valign="top"><a id="a5a4aae72c6dce93bc4514d08d3dededf"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>getNumOfCoords</b> () const</td></tr>
+<tr class="memitem:a5a4aae72c6dce93bc4514d08d3dededf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#a5a4aae72c6dce93bc4514d08d3dededf">getNumOfCoords</a> () const</td></tr>
 <tr class="separator:a5a4aae72c6dce93bc4514d08d3dededf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af13aea72658b84fe8d77418d84555b0d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_point.html#af13aea72658b84fe8d77418d84555b0d">getLength</a> ()</td></tr>
 <tr class="separator:af13aea72658b84fe8d77418d84555b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,6 +109,31 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (cons
 <tr class="separator:aca05f2b329239f5cdea7d62d36ab26a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab04bc6b47b632bf4c7ebe3d02ea92014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04bc6b47b632bf4c7ebe3d02ea92014">&#9670;&nbsp;</a></span>getCoord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Point::getCoord </td>
+          <td>(</td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>coordID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a specific coordinate of the <a class="el" href="class_point.html">Point</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordID</td><td>the ID of the coordinate to be returned. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the specific coordinate of the <a class="el" href="class_point.html">Point</a>. </dd></dl>
+
+</div>
+</div>
 <a id="af13aea72658b84fe8d77418d84555b0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af13aea72658b84fe8d77418d84555b0d">&#9670;&nbsp;</a></span>getLength()</h2>
 
@@ -127,6 +149,49 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (cons
       </table>
 </div><div class="memdoc">
 <p>Returns the length of the vector representation of the <a class="el" href="class_point.html">Point</a>. </p><dl class="section return"><dt>Returns</dt><dd>the length of the vector representation of the <a class="el" href="class_point.html">Point</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a5a4aae72c6dce93bc4514d08d3dededf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4aae72c6dce93bc4514d08d3dededf">&#9670;&nbsp;</a></span>getNumOfCoords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Point::getNumOfCoords </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the number of coordinates of the <a class="el" href="class_point.html">Point</a>.  the number of coordinates of the <a class="el" href="class_point.html">Point</a>. </p>
+
+</div>
+</div>
+<a id="a0367b61d5e647f2cfa5f1c4897be31ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0367b61d5e647f2cfa5f1c4897be31ec">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_point.html">Point</a> &amp; Point::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_point.html">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy assignment operator. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">right</td><td>hand side operand </td></tr>
+    <tr><td class="paramname">left</td><td>hand side operand </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -6,6 +6,11 @@ Point::Point(const size_t& numOfCoords)
 		coords.push_back(0.0);	// 0.0 is the initial value for all the coordinates
 }
 
+/*!
+ * Copy assignment operator.
+ * @param right hand side operand
+ * @param left hand side operand
+ */
 Point& Point::operator=(const Point& rhs)
 {
 	size_t numOfCoords = this->getNumOfCoords();
@@ -30,6 +35,11 @@ void Point::setCoord(const size_t& coordID, const double& coordVal)
 		coords[coordID] = coordVal;
 }
 
+/*!
+ * Returns a specific coordinate of the Point.
+ * @param coordID the ID of the coordinate to be returned.
+ * @return the specific coordinate of the Point.
+ */
 double Point::getCoord(const size_t& coordID) const
 {
 	size_t numOfCoords = this->getNumOfCoords();
@@ -38,7 +48,10 @@ double Point::getCoord(const size_t& coordID) const
 	else
 		return -1.0;	// -1.0 is defined as the error value. TODO: Define specific value as error value that will be used throughout the application
 }
-
+/*!
+ * Returns the number of coordinates of the Point.
+ * @parnam the number of coordinates of the Point.
+ */
 size_t Point::getNumOfCoords() const
 {
 	return coords.size();
