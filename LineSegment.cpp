@@ -1,5 +1,10 @@
 #include "LineSegment.h"
 #include "fnc.h"
+#include "util.h"
+
+// 4 * atan(1) = pi is the most generic solution for computing the value of pi
+// and works with the precision of the particular machine
+const double pi = 4 * std::atan(1);
 
 LineSegment::LineSegment() : start(nullptr), end(nullptr)
 {
@@ -47,4 +52,12 @@ LineSegment LineSegment::operator+(const LineSegment& rhs)
 {
 	LineSegment result(this->start, rhs.end);
 	return result;
+}
+
+bool LineSegment::contains(Point* p)
+{
+	Point v1 = (*p) - (*start);
+	Point v2 = (*p) - (*end);
+	double theta = std::acos((v1 * v2) / (v1.getLength() * v2.getLength()));
+	return util::approximatelyEqual(theta, pi);
 }

@@ -25,5 +25,7 @@ public:
 
 	// operator overloaders
 	LineSegment operator+(const LineSegment& rhs);
+
+	bool contains(Point* p);
 };
 #endif // !LINE_SEGMENT_H
