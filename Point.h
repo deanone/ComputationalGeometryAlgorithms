@@ -21,6 +21,7 @@ public:
 	double getLength();
 	
 	// operator overloaders
+	bool operator==(const Point& rhs);
 	Point operator+(const Point& rhs);
 	Point operator-(const Point& rhs);
 	double operator*(const Point& rhs);

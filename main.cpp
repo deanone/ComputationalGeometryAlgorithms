@@ -2,6 +2,7 @@
 #include "Point.h"
 #include "LineSegment.h"
 #include "fnc.h"
+#include <memory>
 
 int main()
 {
@@ -73,7 +74,7 @@ int main()
 		<< l.getEnd()->getCoord(0) << ", " << l.getEnd()->getCoord(1) << ") contain the point p("
 		<< p.getCoord(0) << ", " << p.getCoord(1) << ") ?\n";
 
-	bool contains = l.contains(&p);
+	bool contains = l.contains(p);
 	if (contains)
 		std::cout << "Yes\n";
 	else

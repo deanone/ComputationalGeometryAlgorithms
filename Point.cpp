@@ -1,4 +1,5 @@
 #include "Point.h"
+#include "util.h"
 
 Point::Point(const size_t& numOfCoords)
 {
@@ -68,6 +69,33 @@ double Point::getLength()
 	for (size_t coordID = 0; coordID < numOfCoords; ++coordID)
 		length += this->getCoord(coordID) * this->getCoord(coordID);
 	return std::sqrt(length);
+}
+
+bool Point::operator==(const Point& rhs)
+{
+	size_t numOfCoords = this->getNumOfCoords();
+	size_t numOfCoord_rhs = rhs.getNumOfCoords();
+
+	// first the vectors have to have the same size (or be in the same space)
+	if (numOfCoords == numOfCoord_rhs)
+	{
+		bool same = true;
+		// check if the Points differ at at least one coordinate
+		for (size_t coordID = 0; coordID < numOfCoords; ++coordID)
+		{
+			double lhsCoord = this->getCoord(coordID);
+			double rhsCoord = rhs.getCoord(coordID);
+			bool equal = util::approximatelyEqual(lhsCoord, rhsCoord);
+			if (!equal)
+			{
+				same = false;
+				break;
+			}
+		}
+		return same;
+	}
+	else
+		return false;
 }
 
 Point Point::operator+(const Point& rhs)

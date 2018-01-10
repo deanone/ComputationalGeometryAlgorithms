@@ -2,15 +2,18 @@
 #define LINE_SEGMENT_H
 
 #include "Point.h"
+#include <memory>
 
 class LineSegment
 {
-	Point* start;
-	Point* end;
+	std::shared_ptr<Point> start;
+	std::shared_ptr<Point> end;
 public:
 	// default constructor
 	LineSegment();
-	// constructor
+	// constructor 1
+	LineSegment(std::shared_ptr<Point> start_, std::shared_ptr<Point> end_);
+	// constructor 2
 	LineSegment(Point* start_, Point* end_);
 	// copy assignment operator
 	LineSegment& operator=(const LineSegment& rhs);
@@ -18,14 +21,13 @@ public:
 	~LineSegment();
 
 	// accessors
-	Point* getStart() const;
-	Point* getEnd() const;
+	std::shared_ptr<Point> getStart() const;
+	std::shared_ptr<Point> getEnd() const;
 	double getLength();
-	void setEndPoints(Point* start, Point* end);
+	void setEndPoints(std::shared_ptr<Point> start, std::shared_ptr<Point> end);
 
 	// operator overloaders
-	LineSegment operator+(const LineSegment& rhs);
 
-	bool contains(Point* p);
+	bool contains(Point& p);
 };
 #endif // !LINE_SEGMENT_H
